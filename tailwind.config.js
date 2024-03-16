@@ -7,4 +7,16 @@
 //   plugins: [],
 // }
 
-module.exports = { content:["./src/**/*.{ts,tsx}"], theme: { extend: {}, }, plugins: [], }
+// module.exports = { content:[purge: ['./src/**/*.{js,jsx,ts,tsx}'", "./public/index.html"], theme: { extend: {}, }, plugins: [], }
+
+module.exports = {
+   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+   darkMode: false, // or 'media' or 'class'
+   theme: {
+      extend: {},
+   },
+   variants: {
+      extend: {},
+   },
+   plugins: [],
+}
